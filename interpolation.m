@@ -1,0 +1,10 @@
+data=xlsread('C:\Users\Amairo\Desktop\sta2.xlsx',1);
+data2=xlsread('C:\Users\Amairo\Desktop\sta2.xlsx',2);
+x=0.4:0.001:0.95;
+y=interp1(data,data2,x,'PCHIP',0);
+fid1=fopen('C:\Users\Amairo\Desktop\x.txt','wt');
+fprintf(fid1,'%g\n',x);      
+fclose(fid1);
+fid2=fopen('C:\Users\Amairo\Desktop\y.txt','wt');
+fprintf(fid2,'%g\n',y);       
+fclose(fid2);
