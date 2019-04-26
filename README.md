@@ -1,2 +1,2 @@
 # chang-e-lunar-satellite
-about chang'e satellite data managing and others in IDL
+about chang'e rover data processing and others in IDL
